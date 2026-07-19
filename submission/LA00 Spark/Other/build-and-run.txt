@@ -1,0 +1,24 @@
+Director's Sandbox — build & run
+================================
+
+Live build URL (for judges): <ADD DEPLOYED URL HERE>
+  Deploy with:  npx vercel   (or push to Vercel/Netlify)
+  Add env var:  WORLDLABS_API_KEY
+
+Run locally:
+  1. npm install
+  2. Put your World Labs key in .env.local:  WORLDLABS_API_KEY=...
+  3. npm run dev
+  4. Open the printed http://localhost:PORT
+
+Usage:
+  - Type a world prompt (e.g. "A frozen magical forest with glowing ice,
+    bioluminescent trees and shimmering northern lights") and Generate World.
+  - The local scene is directable instantly; the real Marble world (~5 min)
+    drops in as the 360 backdrop.
+  - Hit  ▶ Play Scene  for the auto-directed cinematic. Toggle Sound / Voice,
+    press  ● Record  to capture a clip,  ⛶ Cinema  for a clean fullscreen shot.
+  - Keys: Space = play/pause, C = cinema, 1-5 = cameras.
+
+Stack: Next.js 15, React 19, TypeScript, Three.js, World Labs Marble API,
+Web Audio, SpeechSynthesis, MediaRecorder.
